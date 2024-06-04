@@ -1,0 +1,42 @@
+.articles{
+     padding-top: 3rem;
+     display: grid;
+     gap:0.5rem;
+     @media (min-width:50em) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    
+
+    > div {
+        display: flex;
+        flex-direction: row;
+
+        img{
+            width:30%;
+            height: 100%;
+            object-fit: cover;
+           /*  height:170px;
+            width: 100px;; */
+        
+        }
+      
+        .article-content{
+            padding-left: 1rem;
+            h3{
+                color:$clr-primary-soft-red;
+                font-weight: $fw-bold;
+                font-size: 1.7em;
+            }
+            h4{
+            font-size:1.2em;
+            font-weight: $fw-bold;
+            }
+            p{
+                color: $clr-neutral-dark-grayish-blue;
+            }
+        }
+            
+        
+        
+    }
+}
